@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# LaTeX build artifacts
+*.aux
+*.bbl
+*.blg
+*.log
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.toc
+*.lof
+*.lot
+*.nav
+*.snm
+*.vrb
+
+# macOS
+.DS_Store
+._*
+__MACOSX/
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Claude Code prompt files (working drafts, not part of the codebase)
+claude_code_prompt*.md

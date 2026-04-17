@@ -1,0 +1,43 @@
+{
+  "duffing": {
+    "delta": 0.8,
+    "Omega": 1.0,
+    "gamma_exist": [
+      1.2,
+      0.6,
+      0.32
+    ],
+    "forcing_type": "cos",
+    "eps": 0.25,
+    "P_max": 2.4
+  },
+  "josephson": {
+    "alpha_damp": 0.1,
+    "I_dc": 0.0,
+    "Omega": 1.0,
+    "gamma_exist_cos": [
+      0.3,
+      0.25,
+      0.2
+    ],
+    "gamma_exist_sin": [
+      0.2,
+      0.15,
+      0.1
+    ],
+    "eps": 0.1,
+    "P_max": 0.15
+  },
+  "ship": {
+    "delta": 0.08,
+    "alpha_s": 0.5,
+    "Omega": 1.0,
+    "gamma_exist": [
+      0.2,
+      0.15,
+      0.08
+    ],
+    "eps": 0.1,
+    "P_max": 0.05
+  }
+}
