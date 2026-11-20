@@ -1,0 +1,9 @@
+{
+  "N": 5,
+  "Pmax": 2.4,
+  "u_max": 1.5,
+  "tau_meansquare": 1.0667,
+  "peak_meansquare": 2.12,
+  "tau_peak": 0.9878,
+  "peak_realized": 1.5
+}

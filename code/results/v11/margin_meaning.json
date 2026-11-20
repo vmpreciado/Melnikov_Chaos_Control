@@ -1,0 +1,121 @@
+{
+  "source": "results/validation.json",
+  "source_sha256": "899c9505dbf9aa118c1a0d7fd25ec19b3083a27156baa1be51fadd3aac0e8dd0",
+  "new_stress_simulations": false,
+  "observations": [
+    {
+      "system": "duffing",
+      "N": 1,
+      "tau": 0.594,
+      "kappa_1st": 1.297,
+      "kappa_sim": 2.081
+    },
+    {
+      "system": "duffing",
+      "N": 2,
+      "tau": 0.99,
+      "kappa_1st": 1.476,
+      "kappa_sim": 1.97
+    },
+    {
+      "system": "duffing",
+      "N": 3,
+      "tau": 1.0667,
+      "kappa_1st": 1.472,
+      "kappa_sim": 1.966
+    },
+    {
+      "system": "duffing",
+      "N": 5,
+      "tau": 1.0667,
+      "kappa_1st": 1.472,
+      "kappa_sim": 1.968
+    },
+    {
+      "system": "josephson",
+      "N": 1,
+      "tau": 0.6358,
+      "kappa_1st": 1.609,
+      "kappa_sim": null
+    },
+    {
+      "system": "josephson",
+      "N": 3,
+      "tau": 0.7004,
+      "kappa_1st": 1.669,
+      "kappa_sim": null
+    },
+    {
+      "system": "josephson",
+      "N": 5,
+      "tau": 0.7004,
+      "kappa_1st": 1.669,
+      "kappa_sim": null
+    },
+    {
+      "system": "helmholtz",
+      "N": 1,
+      "tau": 0.0355,
+      "kappa_1st": 1.141,
+      "kappa_sim": 2.915
+    },
+    {
+      "system": "helmholtz",
+      "N": 2,
+      "tau": 0.0982,
+      "kappa_1st": 1.39,
+      "kappa_sim": 3.564
+    },
+    {
+      "system": "helmholtz",
+      "N": 3,
+      "tau": 0.0982,
+      "kappa_1st": 1.39,
+      "kappa_sim": 3.509
+    }
+  ],
+  "methods": {
+    "lyapunov_detection_threshold": 0.02,
+    "duffing_scan": {
+      "start": 1.0,
+      "step": 0.15,
+      "last_sample": 2.95
+    },
+    "josephson_scan": {
+      "start": 1.0,
+      "step": 0.15,
+      "last_sample": 3.4,
+      "null_interpretation": "No exponent above 0.02 at the sampled scales"
+    },
+    "finite_kappa_sim": "Linear interpolation of the first sampled detection-threshold crossing",
+    "lyapunov_periods": {
+      "duffing": {
+        "discarded": 300,
+        "averaged": 900
+      },
+      "josephson": {
+        "discarded": 400,
+        "averaged": 800
+      }
+    },
+    "helmholtz_detection": "Safe fraction below 85 percent of its kappa=1 value",
+    "helmholtz_grid": [
+      13,
+      13
+    ],
+    "helmholtz_scan_step": 0.5,
+    "helmholtz_horizon_periods": 120,
+    "helmholtz_escape_threshold": 1.5,
+    "helmholtz_initial_condition_rectangle": [
+      -0.6,
+      0.9,
+      -0.6,
+      0.6
+    ],
+    "limitations": [
+      "Discrete scans can miss intermediate transitions and periodic windows.",
+      "The saved scan does not establish a universal monotone relation between tau and kappa.",
+      "The first-order band threshold and nonlinear detection threshold diagnose different events."
+    ]
+  }
+}

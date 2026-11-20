@@ -1,0 +1,546 @@
+{
+  "model": "x''-x+x^3=eps*(-delta*x'+F(t))",
+  "eps": 0.25,
+  "delta": 0.8,
+  "Omega": 1.0,
+  "section": "t=0 mod 2*pi",
+  "controller": {
+    "a": [
+      -0.947122295054134,
+      -0.47492516818717345,
+      -0.04375504731445094,
+      0.027074876340130817,
+      0.011300625401013583
+    ],
+    "b": [
+      -5.598645132933904e-13,
+      -1.5712137595883379e-12,
+      -3.7092689162591625e-13,
+      1.154895592534246e-13,
+      8.235614362533286e-14
+    ],
+    "tau_target": 0.594,
+    "margin_R": 0.5940000019408599,
+    "margin_L": 0.5940000019410561,
+    "power": 1.1253698143950022,
+    "source": "results/duffing.json stored matched margin (four decimals)"
+  },
+  "method": {
+    "periodic_orbit": "shooting with analytic variational Jacobian; epsilon continuation in steps 0.01",
+    "local_seeds": "cubic invariant-manifold parameterization from first/second/third flow derivatives",
+    "tracing": "P^2(W_u(q)) and P^-2(W_s(q)), both signs of q, all in the same stroboscopic section",
+    "integrator": "DOP853",
+    "rtol": 2e-12,
+    "atol": 2e-13,
+    "shooting_max_step": 0.07853981633974483,
+    "tracing_max_step": 0.06283185307179587,
+    "unstable_qmax": 0.002,
+    "stable_qmax": 1e-05,
+    "maximum_chord": 0.012,
+    "maximum_midpoint_interpolation_error": 2e-05,
+    "crossing_acceptance": {
+      "saddle_exclusion_radius": 1e-06,
+      "maximum_root_residual": 1e-08,
+      "minimum_tangent_angle_degrees": 1.0,
+      "minimum_scaled_tangent_norm": 1e-12,
+      "requires_finite_parameters_residual_and_tangents": true
+    },
+    "convergence": "compare a third period with the seed divided/multiplied by the Floquet multiplier; repeat at tighter ODE tolerances",
+    "scope": "finite numerical manifold segments; zero detected crossings does not prove global separation"
+  },
+  "cases": {
+    "uncontrolled": {
+      "periodic_point": [
+        -0.1886999081564986,
+        0.021565717316370185
+      ],
+      "floquet_multipliers": [
+        0.0010804383786722652,
+        263.42043096817633
+      ],
+      "floquet_directions_columns": [
+        [
+          0.6822550685994082,
+          0.7556455055448942
+        ],
+        [
+          -0.7311142327778997,
+          0.6549808164746517
+        ]
+      ],
+      "monodromy": [
+        [
+          145.62855669935595,
+          135.89543104486953
+        ],
+        [
+          126.2274473978076,
+          117.79295470719902
+        ]
+      ],
+      "shooting_continuation": [
+        {
+          "eps": 0.0,
+          "residual_inf": 0.0
+        },
+        {
+          "eps": 0.01,
+          "residual_inf": 6.938893903907228e-16
+        },
+        {
+          "eps": 0.02,
+          "residual_inf": 3.2959746043559335e-17
+        },
+        {
+          "eps": 0.03,
+          "residual_inf": 2.6298407895808396e-15
+        },
+        {
+          "eps": 0.04,
+          "residual_inf": 1.4779844015322396e-15
+        },
+        {
+          "eps": 0.05,
+          "residual_inf": 9.454242944073599e-17
+        },
+        {
+          "eps": 0.06,
+          "residual_inf": 2.4841240175987878e-15
+        },
+        {
+          "eps": 0.07,
+          "residual_inf": 4.85722573273506e-17
+        },
+        {
+          "eps": 0.08,
+          "residual_inf": 1.1527237497865883e-15
+        },
+        {
+          "eps": 0.09,
+          "residual_inf": 9.627715291671279e-17
+        },
+        {
+          "eps": 0.1,
+          "residual_inf": 7.91033905045424e-16
+        },
+        {
+          "eps": 0.11,
+          "residual_inf": 8.465450562766819e-15
+        },
+        {
+          "eps": 0.12,
+          "residual_inf": 2.220446049250313e-15
+        },
+        {
+          "eps": 0.13,
+          "residual_inf": 1.5362711103250604e-14
+        },
+        {
+          "eps": 0.14,
+          "residual_inf": 1.1934897514720433e-15
+        },
+        {
+          "eps": 0.15,
+          "residual_inf": 2.5717275531356165e-15
+        },
+        {
+          "eps": 0.16,
+          "residual_inf": 9.488937413593135e-16
+        },
+        {
+          "eps": 0.17,
+          "residual_inf": 4.718447854656915e-16
+        },
+        {
+          "eps": 0.18,
+          "residual_inf": 2.7478019859472624e-15
+        },
+        {
+          "eps": 0.19,
+          "residual_inf": 9.159339953157541e-16
+        },
+        {
+          "eps": 0.2,
+          "residual_inf": 4.218847493575595e-15
+        },
+        {
+          "eps": 0.21,
+          "residual_inf": 4.440892098500626e-15
+        },
+        {
+          "eps": 0.22,
+          "residual_inf": 5.495603971894525e-15
+        },
+        {
+          "eps": 0.23,
+          "residual_inf": 3.3306690738754696e-16
+        },
+        {
+          "eps": 0.24,
+          "residual_inf": 5.2388648974499574e-15
+        },
+        {
+          "eps": 0.25,
+          "residual_inf": 3.58046925441613e-15
+        }
+      ],
+      "forcing_a": [
+        1.2,
+        0.6,
+        0.32,
+        0.0,
+        0.0
+      ],
+      "forcing_b": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "liouville_determinant_relative_error": 2.0038193326854525e-11,
+      "curves": {
+        "unstable_negative": {
+          "points": 773,
+          "refinement_levels": 8,
+          "max_visible_chord": 0.008462929598919498,
+          "max_visible_midpoint_error": 1.9917544155399108e-05
+        },
+        "unstable_positive": {
+          "points": 948,
+          "refinement_levels": 8,
+          "max_visible_chord": 0.009457796167029462,
+          "max_visible_midpoint_error": 1.991693377095587e-05
+        },
+        "stable_negative": {
+          "points": 517,
+          "refinement_levels": 4,
+          "max_visible_chord": 0.011991437088942064,
+          "max_visible_midpoint_error": 1.9870138048717946e-05
+        },
+        "stable_positive": {
+          "points": 445,
+          "refinement_levels": 4,
+          "max_visible_chord": 0.011995298236450836,
+          "max_visible_midpoint_error": 1.9448922657314592e-05
+        }
+      },
+      "unstable_local_series_columns": [
+        [
+          0.7556455055448942,
+          0.02956461645244186,
+          -0.0650880901733883
+        ],
+        [
+          0.6549808164746517,
+          0.12491320893527794,
+          -0.16996789505868673
+        ]
+      ],
+      "unstable_convergence": {
+        "sample_points": 120,
+        "extra_period_max_distance": 2.6178201146442505e-09,
+        "tighter_tolerance_max_distance": 1.1440685083667693e-11
+      },
+      "stable_local_series_columns": [
+        [
+          0.6822550685994082,
+          0.01687483325298883,
+          -0.0351949748887279
+        ],
+        [
+          -0.7311142327778997,
+          -0.08932755485193987,
+          0.11358304917007075
+        ]
+      ],
+      "stable_convergence": {
+        "sample_points": 120,
+        "extra_period_max_distance": 4.6793552922825783e-07,
+        "tighter_tolerance_max_distance": 1.732198634087937e-10
+      },
+      "transverse_crossings_in_traced_segments": [
+        {
+          "point": [
+            -1.280417694448355,
+            0.5288162991021312
+          ],
+          "q_unstable": -5.237593185563732e-05,
+          "q_stable": -2.4125052950507077e-06,
+          "residual": 1.5718162589717889e-12,
+          "tangent_angle_degrees": 31.51640166450879,
+          "extra_period_check": {
+            "extra_periods": 1,
+            "root_solver_success": true,
+            "residual": 1.666972680581369e-09,
+            "point_displacement": 2.2718621392409465e-09,
+            "tangent_angle_degrees": 31.51640137905245,
+            "point": [
+              -1.2804176949487034,
+              0.5288162968860516
+            ],
+            "acceptance_max_residual_and_displacement": 2e-06
+          }
+        },
+        {
+          "point": [
+            -0.443851947604927,
+            0.2807068694342436
+          ],
+          "q_unstable": -0.0005632936564178135,
+          "q_stable": -4.440149588501995e-07,
+          "residual": 8.517288840238363e-12,
+          "tangent_angle_degrees": 77.51559776204998,
+          "extra_period_check": {
+            "extra_periods": 1,
+            "root_solver_success": true,
+            "residual": 1.2963707322954803e-08,
+            "point_displacement": 3.464972126166241e-10,
+            "tangent_angle_degrees": 77.51559793235208,
+            "point": [
+              -0.4438519474274959,
+              0.28070686973186504
+            ],
+            "acceptance_max_residual_and_displacement": 2e-06
+          }
+        },
+        {
+          "point": [
+            -0.15547158224391247,
+            -0.01420208749797599
+          ],
+          "q_unstable": 0.0014018123519423638,
+          "q_stable": 5.6792685801602216e-08,
+          "residual": 4.318919473306586e-12,
+          "tangent_angle_degrees": 87.55170367878007,
+          "extra_period_check": {
+            "extra_periods": 1,
+            "root_solver_success": true,
+            "residual": 2.2665265655267585e-09,
+            "point_displacement": 1.9794449600999935e-11,
+            "tangent_angle_degrees": 87.55170368917427,
+            "point": [
+              -0.15547158222882052,
+              -0.014202087485167669
+            ],
+            "acceptance_max_residual_and_displacement": 2e-06
+          }
+        }
+      ],
+      "crossing_scope": "numerical roots on the finite segments; no global absence claim"
+    },
+    "controlled": {
+      "periodic_point": [
+        -0.04492593378941714,
+        0.005463771995544673
+      ],
+      "floquet_multipliers": [
+        0.0009704130279431624,
+        293.2870181448741
+      ],
+      "floquet_directions_columns": [
+        [
+          0.6715699412345097,
+          0.7421619259251224
+        ],
+        [
+          -0.7409411677253985,
+          0.6702206171904243
+        ]
+      ],
+      "monodromy": [
+        [
+          161.2787435133805,
+          146.1780088909529
+        ],
+        [
+          145.6443464028104,
+          132.00924504452152
+        ]
+      ],
+      "shooting_continuation": [
+        {
+          "eps": 0.0,
+          "residual_inf": 0.0
+        },
+        {
+          "eps": 0.01,
+          "residual_inf": 1.6696713456276768e-17
+        },
+        {
+          "eps": 0.02,
+          "residual_inf": 1.46150452851046e-16
+        },
+        {
+          "eps": 0.03,
+          "residual_inf": 4.727121472036799e-16
+        },
+        {
+          "eps": 0.04,
+          "residual_inf": 3.217912047936977e-16
+        },
+        {
+          "eps": 0.05,
+          "residual_inf": 1.2038980923279041e-15
+        },
+        {
+          "eps": 0.06,
+          "residual_inf": 5.342948306008566e-16
+        },
+        {
+          "eps": 0.07,
+          "residual_inf": 2.9091312692131055e-15
+        },
+        {
+          "eps": 0.08,
+          "residual_inf": 2.858824288409778e-15
+        },
+        {
+          "eps": 0.09,
+          "residual_inf": 1.214306433183765e-15
+        },
+        {
+          "eps": 0.1,
+          "residual_inf": 7.216449660063518e-16
+        },
+        {
+          "eps": 0.11,
+          "residual_inf": 4.0245584642661925e-16
+        },
+        {
+          "eps": 0.12,
+          "residual_inf": 9.194034422677078e-16
+        },
+        {
+          "eps": 0.13,
+          "residual_inf": 7.353059133796691e-16
+        },
+        {
+          "eps": 0.14,
+          "residual_inf": 2.2690183065776637e-15
+        },
+        {
+          "eps": 0.15,
+          "residual_inf": 2.469378868052985e-15
+        },
+        {
+          "eps": 0.16,
+          "residual_inf": 2.1588633658531364e-15
+        },
+        {
+          "eps": 0.17,
+          "residual_inf": 5.2948097295502095e-15
+        },
+        {
+          "eps": 0.18,
+          "residual_inf": 2.456368441983159e-15
+        },
+        {
+          "eps": 0.19,
+          "residual_inf": 3.7643499428696714e-16
+        },
+        {
+          "eps": 0.2,
+          "residual_inf": 3.740063814205996e-15
+        },
+        {
+          "eps": 0.21,
+          "residual_inf": 1.1726730697603216e-15
+        },
+        {
+          "eps": 0.22,
+          "residual_inf": 4.503342143635791e-15
+        },
+        {
+          "eps": 0.23,
+          "residual_inf": 4.3021142204224816e-16
+        },
+        {
+          "eps": 0.24,
+          "residual_inf": 1.3253287356462806e-15
+        },
+        {
+          "eps": 0.25,
+          "residual_inf": 4.2674197509029455e-15
+        }
+      ],
+      "forcing_a": [
+        0.2528777049458659,
+        0.12507483181282653,
+        0.27624495268554905,
+        0.027074876340130817,
+        0.011300625401013583
+      ],
+      "forcing_b": [
+        -5.598645132933904e-13,
+        -1.5712137595883379e-12,
+        -3.7092689162591625e-13,
+        1.154895592534246e-13,
+        8.235614362533286e-14
+      ],
+      "liouville_determinant_relative_error": 8.322231792590173e-12,
+      "curves": {
+        "unstable_negative": {
+          "points": 745,
+          "refinement_levels": 8,
+          "max_visible_chord": 0.010497600743961083,
+          "max_visible_midpoint_error": 1.9948588577750573e-05
+        },
+        "unstable_positive": {
+          "points": 703,
+          "refinement_levels": 8,
+          "max_visible_chord": 0.010510868234642182,
+          "max_visible_midpoint_error": 1.9974779454523348e-05
+        },
+        "stable_negative": {
+          "points": 523,
+          "refinement_levels": 4,
+          "max_visible_chord": 0.010368358847663978,
+          "max_visible_midpoint_error": 1.987340932693291e-05
+        },
+        "stable_positive": {
+          "points": 516,
+          "refinement_levels": 4,
+          "max_visible_chord": 0.010419878781835482,
+          "max_visible_midpoint_error": 1.9992888563016566e-05
+        }
+      },
+      "unstable_local_series_columns": [
+        [
+          0.7421619259251224,
+          0.0055275901258033475,
+          -0.05922768224407762
+        ],
+        [
+          0.6702206171904243,
+          0.026082506837386634,
+          -0.16053480577992787
+        ]
+      ],
+      "unstable_convergence": {
+        "sample_points": 120,
+        "extra_period_max_distance": 2.4017621503509323e-09,
+        "tighter_tolerance_max_distance": 3.0647547923568376e-12
+      },
+      "stable_local_series_columns": [
+        [
+          0.6715699412345097,
+          0.0031296396289891867,
+          -0.03252324204965849
+        ],
+        [
+          -0.7409411677253985,
+          -0.018750559754039515,
+          0.10769108105247288
+        ]
+      ],
+      "stable_convergence": {
+        "sample_points": 120,
+        "extra_period_max_distance": 4.194121351416263e-08,
+        "tighter_tolerance_max_distance": 5.061447351580552e-11
+      },
+      "transverse_crossings_in_traced_segments": [],
+      "crossing_scope": "numerical roots on the finite segments; no global absence claim"
+    }
+  }
+}

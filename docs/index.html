@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Optimal Multiharmonic Forcing Design for Homoclinic Chaos Control via Convex Optimization</title>
+  <meta name="description" content="A preprint by Víctor M. Preciado on phase-locked multiharmonic forcing, first-order Melnikov margins, and convex optimization.">
+  <meta name="citation_title" content="Optimal Multiharmonic Forcing Design for Homoclinic Chaos Control via Convex Optimization">
+  <meta name="citation_author" content="Preciado, Víctor M.">
+  <meta name="citation_author_institution" content="University of Pennsylvania">
+  <meta name="citation_publication_date" content="2026/11/19">
+  <meta name="citation_language" content="en">
+  <meta name="citation_pdf_url" content="https://vmpreciado.github.io/Melnikov_Chaos_Control/main_v12.pdf">
+  <link rel="canonical" href="https://vmpreciado.github.io/Melnikov_Chaos_Control/">
+  <style>
+    :root { color-scheme: light; --ink: #1b2527; --muted: #485653; --accent: #174f52; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #fcfbf7; color: var(--ink); }
+    main { max-width: 49rem; margin: 0 auto; padding: clamp(2.4rem, 7vw, 5.6rem) clamp(1.25rem, 4.5vw, 3rem); }
+    article { border-top: 4px solid var(--accent); padding-top: 1.75rem; }
+    h1, h2, .abstract { font-family: "Source Serif 4", Georgia, "Times New Roman", serif; }
+    header p, nav { font-family: "Source Sans 3", system-ui, sans-serif; }
+    .status { margin: 0 0 .85rem; color: var(--muted); font-size: .88rem; line-height: 1.6; }
+    h1 { font-weight: 500; font-size: clamp(2.06rem, 5.3vw, 3.45rem); line-height: 1.09; letter-spacing: -.023em; margin: 0 0 1.25rem; }
+    .citation_author { font-size: 1.3rem; line-height: 1.45; margin: 0; }
+    .affiliation { margin: .12rem 0 0; font-size: .97rem; color: var(--muted); }
+    nav { display: flex; gap: .7rem 1.35rem; flex-wrap: wrap; margin: 1.9rem 0; align-items: center; }
+    a { color: var(--accent); text-underline-offset: .2em; }
+    a:hover { text-decoration-thickness: .13em; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: .22rem; }
+    .paper { font-weight: 650; }
+    section { padding-top: 1.4rem; border-top: 1px solid #c9ceca; }
+    h2 { margin: 0 0 .7rem; font-size: 1.55rem; font-weight: 600; }
+    .abstract { font-size: 1.12rem; line-height: 1.65; margin: 0; }
+    @media print { body { background: white; } main { max-width: none; padding: 0; } a { color: black; } }
+  </style>
+</head>
+<body>
+  <main>
+    <article>
+      <header>
+        <p class="status">Preprint · Version 12 · <time datetime="2026-11-19">November 19, 2026</time></p>
+        <h1 class="citation_title">Optimal Multiharmonic Forcing Design for Homoclinic Chaos Control via Convex Optimization</h1>
+        <p class="citation_author">Víctor M. Preciado</p>
+        <p class="affiliation">University of Pennsylvania</p>
+      </header>
+      <nav aria-label="Paper and research materials">
+        <a class="paper" href="main_v12.pdf">Read the paper (PDF)</a>
+        <a href="https://github.com/vmpreciado/Melnikov_Chaos_Control/tree/v12/code">Code and data on GitHub</a>
+        <a href="https://github.com/vmpreciado/Melnikov_Chaos_Control/releases/download/v12/ESM_1.zip">Online Resource 1 (ZIP)</a>
+      </nav>
+      <section aria-labelledby="abstract-heading">
+        <h2 id="abstract-heading">Abstract</h2>
+        <p class="abstract">Small periodic perturbations can split a homoclinic orbit and produce transverse intersections between the stable and unstable manifolds of a saddle. We design phase-locked multiharmonic forcing to prevent these crossings near a specified orbit for sufficiently small perturbations. The design maximizes the uniform distance of the first-order Melnikov function from zero under a power budget, or minimizes the power required for a prescribed margin. For a finite harmonic drive, the Melnikov function is a trigonometric polynomial whose coefficients depend affinely on the sine and cosine control amplitudes. The Fejér–Riesz theorem gives an exact semidefinite certificate for its sign over all forcing phases. In a Helmholtz escape oscillator, we prove that control at the fundamental frequency has a sharp margin ceiling of approximately 0.0355 at any power. Adding the second harmonic makes a margin of 0.08 attainable. For a Duffing resonator and a Josephson junction, multiharmonic control reduces power by 27% and 7%, respectively, at matched margins certified on both homoclinic branches. Nonlinear simulations assess the finite-perturbation response through manifold tracing, periodic-orbit diagnostics, and finite-horizon escape tests.</p>
+      </section>
+    </article>
+  </main>
+</body>
+</html>

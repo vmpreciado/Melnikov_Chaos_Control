@@ -1,0 +1,56 @@
+{
+  "reference": "Lenci and Rega, J. Vib. Control 9 (2003) Table 1",
+  "gain_infinite": 2.0,
+  "rows": [
+    {
+      "N": 2,
+      "gain_sdp": 1.4142,
+      "gain_lr": 1.4142,
+      "coeffs_sdp": [
+        0.3536
+      ]
+    },
+    {
+      "N": 3,
+      "gain_sdp": 1.618,
+      "gain_lr": 1.618,
+      "coeffs_sdp": [
+        0.5528,
+        0.1708
+      ]
+    },
+    {
+      "N": 4,
+      "gain_sdp": 1.7321,
+      "gain_lr": 1.7321,
+      "coeffs_sdp": [
+        0.6736,
+        0.3333,
+        0.0962
+      ]
+    },
+    {
+      "N": 5,
+      "gain_sdp": 1.8019,
+      "gain_lr": 1.8019,
+      "coeffs_sdp": [
+        0.7517,
+        0.4621,
+        0.2151,
+        0.0597
+      ]
+    },
+    {
+      "N": 6,
+      "gain_sdp": 1.8478,
+      "gain_lr": 1.8476,
+      "coeffs_sdp": [
+        0.805,
+        0.5607,
+        0.3266,
+        0.1464,
+        0.0396
+      ]
+    }
+  ]
+}

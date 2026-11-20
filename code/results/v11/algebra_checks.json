@@ -1,0 +1,20 @@
+{
+  "gram_identity_max_absolute_error": 2.6645352591003757e-15,
+  "unit_box_support": 1.4142135623730951,
+  "phase_rotation_exact_uniform_bound": 0.25627096482329803,
+  "helmholtz": {
+    "fixed_cosine_coefficients": [
+      0.16321743298927993,
+      0.08448141349945364,
+      0.004107105213810335
+    ],
+    "factorization_max_absolute_error": 5.551115123125783e-17,
+    "all_power_first_harmonic_margin_bound": 0.03551858650054636,
+    "attained_margin": 0.03551858650054636,
+    "attaining_controller_a1": 0.0,
+    "attaining_controller_b1": -0.10251633979201236,
+    "attaining_power": 0.010509599924351336,
+    "unreachable_target": 0.08
+  },
+  "scope": "Numerical checks of displayed analytic identities, not interval certificates."
+}
